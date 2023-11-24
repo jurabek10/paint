@@ -1,4 +1,4 @@
-script.js
+
 // GLOBAL VARIABLES
 const canvas = document.querySelector('canvas'),
 	toolBtns = document.querySelectorAll('.tool'),

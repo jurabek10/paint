@@ -1,5 +1,5 @@
-/* GLOBAL STYLES */
 
+/* GLOBAL STYLES */
 html {
     height: 100%;
     box-sizing: border-box;
@@ -70,14 +70,14 @@ select:-webkit-autofill:focus {
 
 /* CONTAINER */
 
-.container {
+/* .container {
     width: 100%;
     max-width: 1200px;
     padding-left: 50px;
     padding-right: 50px;
     margin-right: auto;
     margin-left: auto;
-}
+} */
 
 /* MAIN-CONTENT */
 

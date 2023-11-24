@@ -1,78 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jurabek | Paint</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Jurabek | Paint</title>
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body>
+		<div class="container">
+			<section class="drawing-board">
+				<canvas></canvas>
+			</section>
+			<section class="tools-board">
+				<div class="row">
+					<label class="title">SHAPES</label>
+					<ul class="options">
+						<li class="option tool" id="rectangle">
+							<img src="img/rectangle.svg" alt="rectangle" />
+							<span>Rectangle</span>
+						</li>
+						<li class="option tool" id="circle">
+							<img src="img/circle.svg" alt="circle" />
+							<span>Circle</span>
+						</li>
+						<li class="option tool" id="triangle">
+							<img src="img/triangle.svg" alt="triangle" />
+							<span>Triangle</span>
+						</li>
+						<li class="option">
+							<input type="checkbox" id="fill-color" />
+							<label for="fill-color">Filling color</label>
+						</li>
+					</ul>
+				</div>
+				<div class="row">
+					<label class="title">Options</label>
+					<ul class="options">
+						<li class="option tool active" id="brush">
+							<img src="img/brush.svg" alt="brush" />
+							<span>Brush</span>
+						</li>
+						<li class="option tool" id="eraser">
+							<img src="img/eraser.svg" alt="eraser" />
+							<span>Erase</span>
+						</li>
+						<li class="option">
+							<input type="range" id="size-slider" min="1" max="30" value="5" />
+						</li>
+					</ul>
+				</div>
+				<div class="row colors">
+					<label class="title">Colors</label>
+					<ul class="options">
+						<li class="option"></li>
+						<li class="option selected"></li>
+						<li class="option"></li>
+						<li class="option"></li>
+						<li class="option">
+							<input type="color" id="color-picker" value="#4a98f7" />
+						</li>
+					</ul>
+				</div>
+				<div class="row buttons">
+					<button class="clear-canvas">Erase</button>
+					<button class="save-img">Save</button>
+				</div>
+			</section>
+		</div>
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    
-    <div class="container">
-        <section class="drawing-board">
-            <canvas></canvas>
-        </section>
-        <section class="tools-board">
-            <div class="row">
-                <label class="title">SHAPES</label>
-                <ul class="options">
-                    <li class="option tool" id="rectangle">
-                        <img class="" src="img/rectangle.svg" alt="Rectangle" width="" height=""/>
-                        <span>Rectangle</span>
-                    </li>
-                    <li class="option tool" id="circle">
-                        <img class="" src="img/circle.svg" alt="Circle" width="" height=""/>
-                        <span>Circle</span>
-                    </li>
-                    <li class="option tool" id="triangle">
-                        <img class="" src="img/triangle.svg" alt="Triangle" width="" height=""/>
-                        <span>Triangle</span>
-                    </li>
-                    <li class="option">
-                        <input type="checkbox" id="fill-color">
-                        <label for="fill-color">Filling color</label>
-                    </li>
-                </ul>
-            </div>
-            <div class="row">
-                <label class="title">OPTIONS</label>
-                <ul class="options">
-                    <li class="option tool active" id="brush">
-                        <img class="" src="img/brush.svg" alt="Brush" width="" height="">
-                        <span>Brush</span>
-                    </li>
-                    <li class="option tool" id="eraser">
-                        <img class="" src="img/eraser.svg" alt="Eraser" width="" height="">
-                        <span>Brush</span>
-                    </li>
-                    <li class="option">
-                        <input type="range" id="size-slider" min="1" max="30" value="5">
-                    </li>
-                </ul>
-            </div>
-            <div class="row colors">
-                <label class="title">COLORS</label>
-                <ul class="options">
-                    <li class="option"></li>
-                    <li class="option selected"></li>
-                    <li class="option"></li>
-                    <li class="option"></li>
-                    <li class="option">
-                        <input type="color" id="color-picker" value="#4a98f7">
-                    </li>
-                </ul>
-            </div>
-            <div class="row buttons">
-                <button class="clear-canvas">Erase</button>
-                <button class="save-image">Save Image</button>
-            </div>
-        </section>
-    </div>
-
-    <script src="js/main.js" defer></script>
-</body>
+        <script src="js/script.js" defer></script>
+	</body>
 </html>
